@@ -1,0 +1,1201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 951F592A0A8A710D007B49F5 /* COMUtilities.cpp */; };
+		D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8A1175BF8000446CDD /* QtCore.framework */; };
+		D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8B1175BF8000446CDD /* QtGui.framework */; };
+		EA5FE04414AA2D8300686395 /* SerialNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA5FE04314AA2D8300686395 /* SerialNumber.cpp */; };
+		EA8DB05511E3DD8F008D4456 /* ArchiTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00611E3DD8F008D4456 /* ArchiTools.cpp */; };
+		EA8DB05611E3DD8F008D4456 /* AssembleRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00711E3DD8F008D4456 /* AssembleRoom.cpp */; };
+		EA8DB05711E3DD8F008D4456 /* BuildingModeler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00811E3DD8F008D4456 /* BuildingModeler.cpp */; };
+		EA8DB05911E3DD8F008D4456 /* BuildingPrim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00A11E3DD8F008D4456 /* BuildingPrim.cpp */; };
+		EA8DB05A11E3DD8F008D4456 /* BuildingPrimitiveData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00B11E3DD8F008D4456 /* BuildingPrimitiveData.cpp */; };
+		EA8DB05B11E3DD8F008D4456 /* MBuildingAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00C11E3DD8F008D4456 /* MBuildingAction.cpp */; };
+		EA8DB05C11E3DD8F008D4456 /* MBuildingCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00D11E3DD8F008D4456 /* MBuildingCache.cpp */; };
+		EA8DB05D11E3DD8F008D4456 /* MBuildingDragAndDrop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00E11E3DD8F008D4456 /* MBuildingDragAndDrop.cpp */; };
+		EA8DB05E11E3DD8F008D4456 /* MBuildingPanePart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB00F11E3DD8F008D4456 /* MBuildingPanePart.cpp */; };
+		EA8DB05F11E3DD8F008D4456 /* MBuildingProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01011E3DD8F008D4456 /* MBuildingProperties.cpp */; };
+		EA8DB06011E3DD8F008D4456 /* MBuildingRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01111E3DD8F008D4456 /* MBuildingRenderable.cpp */; };
+		EA8DB06111E3DD8F008D4456 /* MChildrenActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01211E3DD8F008D4456 /* MChildrenActions.cpp */; };
+		EA8DB06211E3DD8F008D4456 /* MCreateActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01311E3DD8F008D4456 /* MCreateActions.cpp */; };
+		EA8DB06311E3DD8F008D4456 /* MDefaultSettingActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01411E3DD8F008D4456 /* MDefaultSettingActions.cpp */; };
+		EA8DB06411E3DD8F008D4456 /* MEditActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01511E3DD8F008D4456 /* MEditActions.cpp */; };
+		EA8DB06511E3DD8F008D4456 /* MImportCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01611E3DD8F008D4456 /* MImportCurve.cpp */; };
+		EA8DB06611E3DD8F008D4456 /* MInsertionAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01711E3DD8F008D4456 /* MInsertionAction.cpp */; };
+		EA8DB06711E3DD8F008D4456 /* MMouseDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01811E3DD8F008D4456 /* MMouseDown.cpp */; };
+		EA8DB06811E3DD8F008D4456 /* MPicking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01911E3DD8F008D4456 /* MPicking.cpp */; };
+		EA8DB06911E3DD8F008D4456 /* MPositionActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01A11E3DD8F008D4456 /* MPositionActions.cpp */; };
+		EA8DB06A11E3DD8F008D4456 /* MSelectionActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01B11E3DD8F008D4456 /* MSelectionActions.cpp */; };
+		EA8DB06B11E3DD8F008D4456 /* PBooleanPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01C11E3DD8F008D4456 /* PBooleanPolygon.cpp */; };
+		EA8DB06C11E3DD8F008D4456 /* PBuildingVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01D11E3DD8F008D4456 /* PBuildingVisitor.cpp */; };
+		EA8DB06D11E3DD8F008D4456 /* PCircleArc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01E11E3DD8F008D4456 /* PCircleArc.cpp */; };
+		EA8DB06E11E3DD8F008D4456 /* PCommonBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB01F11E3DD8F008D4456 /* PCommonBase.cpp */; };
+		EA8DB06F11E3DD8F008D4456 /* PConstrPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02011E3DD8F008D4456 /* PConstrPoint.cpp */; };
+		EA8DB07011E3DD8F008D4456 /* PCutter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02111E3DD8F008D4456 /* PCutter.cpp */; };
+		EA8DB07111E3DD8F008D4456 /* PFacet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02211E3DD8F008D4456 /* PFacet.cpp */; };
+		EA8DB07211E3DD8F008D4456 /* PLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02311E3DD8F008D4456 /* PLevel.cpp */; };
+		EA8DB07311E3DD8F008D4456 /* PNames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02411E3DD8F008D4456 /* PNames.cpp */; };
+		EA8DB07411E3DD8F008D4456 /* POutlinePoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02511E3DD8F008D4456 /* POutlinePoint.cpp */; };
+		EA8DB07511E3DD8F008D4456 /* PPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02611E3DD8F008D4456 /* PPlan.cpp */; };
+		EA8DB07611E3DD8F008D4456 /* PPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02711E3DD8F008D4456 /* PPoint.cpp */; };
+		EA8DB07711E3DD8F008D4456 /* PQuotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02811E3DD8F008D4456 /* PQuotation.cpp */; };
+		EA8DB07811E3DD8F008D4456 /* PRoof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02911E3DD8F008D4456 /* PRoof.cpp */; };
+		EA8DB07911E3DD8F008D4456 /* PRoofPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02A11E3DD8F008D4456 /* PRoofPoint.cpp */; };
+		EA8DB07A11E3DD8F008D4456 /* PRoofProfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02B11E3DD8F008D4456 /* PRoofProfile.cpp */; };
+		EA8DB07B11E3DD8F008D4456 /* PRoofZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02C11E3DD8F008D4456 /* PRoofZone.cpp */; };
+		EA8DB07C11E3DD8F008D4456 /* PRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02D11E3DD8F008D4456 /* PRoom.cpp */; };
+		EA8DB07D11E3DD8F008D4456 /* PSubObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02E11E3DD8F008D4456 /* PSubObject.cpp */; };
+		EA8DB07E11E3DD8F008D4456 /* PTessellator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB02F11E3DD8F008D4456 /* PTessellator.cpp */; };
+		EA8DB07F11E3DD8F008D4456 /* PVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03011E3DD8F008D4456 /* PVertex.cpp */; };
+		EA8DB08011E3DD8F008D4456 /* PWall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03111E3DD8F008D4456 /* PWall.cpp */; };
+		EA8DB08111E3DD8F008D4456 /* PWallWithCrenel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03211E3DD8F008D4456 /* PWallWithCrenel.cpp */; };
+		EA8DB08311E3DD8F008D4456 /* Tessellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03411E3DD8F008D4456 /* Tessellation.cpp */; };
+		EA8DB08411E3DD8F008D4456 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03511E3DD8F008D4456 /* Utils.cpp */; };
+		EA8DB08711E3DD8F008D4456 /* booleng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03B11E3DD8F008D4456 /* booleng.cpp */; };
+		EA8DB08811E3DD8F008D4456 /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03D11E3DD8F008D4456 /* graph.cpp */; };
+		EA8DB08911E3DD8F008D4456 /* graphlst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB03F11E3DD8F008D4456 /* graphlst.cpp */; };
+		EA8DB08A11E3DD8F008D4456 /* instonly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04111E3DD8F008D4456 /* instonly.cpp */; };
+		EA8DB08B11E3DD8F008D4456 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04311E3DD8F008D4456 /* line.cpp */; };
+		EA8DB08C11E3DD8F008D4456 /* link.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04511E3DD8F008D4456 /* link.cpp */; };
+		EA8DB08D11E3DD8F008D4456 /* lpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04711E3DD8F008D4456 /* lpoint.cpp */; };
+		EA8DB08E11E3DD8F008D4456 /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04911E3DD8F008D4456 /* node.cpp */; };
+		EA8DB08F11E3DD8F008D4456 /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04B11E3DD8F008D4456 /* record.cpp */; };
+		EA8DB09011E3DD8F008D4456 /* scanbeam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA8DB04D11E3DD8F008D4456 /* scanbeam.cpp */; };
+		EA8DB09111E3DD8F008D4456 /* ArchiTools.r in Rez */ = {isa = PBXBuildFile; fileRef = EA8DB05111E3DD8F008D4456 /* ArchiTools.r */; };
+		EA8DB0B311E3E2FA008D4456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DB0B211E3E2FA008D4456 /* OpenGL.framework */; };
+		EA8DB0B911E3E324008D4456 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DB0B811E3E324008D4456 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		951F592A0A8A710D007B49F5 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../../Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		95CE14E30A897A1C0055D091 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98CCF8A1175BF8000446CDD /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		D98CCF8B1175BF8000446CDD /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		EA5FE04214AA2D8300686395 /* SerialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerialNumber.h; path = ../Common/SerialNumber.h; sourceTree = SOURCE_ROOT; };
+		EA5FE04314AA2D8300686395 /* SerialNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SerialNumber.cpp; path = ../Common/SerialNumber.cpp; sourceTree = SOURCE_ROOT; };
+		EA8DAFD411E3DD8F008D4456 /* ArchiTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiTools.h; sourceTree = "<group>"; };
+		EA8DAFD511E3DD8F008D4456 /* AssembleRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssembleRoom.h; sourceTree = "<group>"; };
+		EA8DAFD611E3DD8F008D4456 /* BuildingDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingDef.h; sourceTree = "<group>"; };
+		EA8DAFD711E3DD8F008D4456 /* BuildingModeler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingModeler.h; sourceTree = "<group>"; };
+		EA8DAFD811E3DD8F008D4456 /* BuildingModelerEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingModelerEnums.h; sourceTree = "<group>"; };
+		EA8DAFD911E3DD8F008D4456 /* BuildingPrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingPrim.h; sourceTree = "<group>"; };
+		EA8DAFDA11E3DD8F008D4456 /* BuildingPrimitiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingPrimitiveData.h; sourceTree = "<group>"; };
+		EA8DAFDB11E3DD8F008D4456 /* MBuildingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingAction.h; sourceTree = "<group>"; };
+		EA8DAFDC11E3DD8F008D4456 /* MBuildingCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingCache.h; sourceTree = "<group>"; };
+		EA8DAFDD11E3DD8F008D4456 /* MBuildingDragAndDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingDragAndDrop.h; sourceTree = "<group>"; };
+		EA8DAFDE11E3DD8F008D4456 /* MBuildingPanePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingPanePart.h; sourceTree = "<group>"; };
+		EA8DAFDF11E3DD8F008D4456 /* MBuildingProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingProperties.h; sourceTree = "<group>"; };
+		EA8DAFE011E3DD8F008D4456 /* MBuildingRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBuildingRenderable.h; sourceTree = "<group>"; };
+		EA8DAFE111E3DD8F008D4456 /* MChildrenActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MChildrenActions.h; sourceTree = "<group>"; };
+		EA8DAFE211E3DD8F008D4456 /* MCreateActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCreateActions.h; sourceTree = "<group>"; };
+		EA8DAFE311E3DD8F008D4456 /* MDefaultSettingActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDefaultSettingActions.h; sourceTree = "<group>"; };
+		EA8DAFE411E3DD8F008D4456 /* MEditActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEditActions.h; sourceTree = "<group>"; };
+		EA8DAFE511E3DD8F008D4456 /* MImportCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MImportCurve.h; sourceTree = "<group>"; };
+		EA8DAFE611E3DD8F008D4456 /* MInsertionAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInsertionAction.h; sourceTree = "<group>"; };
+		EA8DAFE711E3DD8F008D4456 /* MMouseDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMouseDown.h; sourceTree = "<group>"; };
+		EA8DAFE811E3DD8F008D4456 /* MPicking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPicking.h; sourceTree = "<group>"; };
+		EA8DAFE911E3DD8F008D4456 /* MPositionActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPositionActions.h; sourceTree = "<group>"; };
+		EA8DAFEA11E3DD8F008D4456 /* MSelectionActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSelectionActions.h; sourceTree = "<group>"; };
+		EA8DAFEB11E3DD8F008D4456 /* PBooleanPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBooleanPolygon.h; sourceTree = "<group>"; };
+		EA8DAFEC11E3DD8F008D4456 /* PBuildingVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBuildingVisitor.h; sourceTree = "<group>"; };
+		EA8DAFED11E3DD8F008D4456 /* PCircleArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCircleArc.h; sourceTree = "<group>"; };
+		EA8DAFEE11E3DD8F008D4456 /* PCommonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCommonBase.h; sourceTree = "<group>"; };
+		EA8DAFEF11E3DD8F008D4456 /* PConstrPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PConstrPoint.h; sourceTree = "<group>"; };
+		EA8DAFF011E3DD8F008D4456 /* PCutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCutter.h; sourceTree = "<group>"; };
+		EA8DAFF111E3DD8F008D4456 /* PFacet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFacet.h; sourceTree = "<group>"; };
+		EA8DAFF211E3DD8F008D4456 /* PLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLevel.h; sourceTree = "<group>"; };
+		EA8DAFF311E3DD8F008D4456 /* PNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNames.h; sourceTree = "<group>"; };
+		EA8DAFF411E3DD8F008D4456 /* PolygonToolBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonToolBoolean.h; sourceTree = "<group>"; };
+		EA8DAFF511E3DD8F008D4456 /* POutlinePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POutlinePoint.h; sourceTree = "<group>"; };
+		EA8DAFF611E3DD8F008D4456 /* PPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPlan.h; sourceTree = "<group>"; };
+		EA8DAFF711E3DD8F008D4456 /* PPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPoint.h; sourceTree = "<group>"; };
+		EA8DAFF811E3DD8F008D4456 /* PQuotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQuotation.h; sourceTree = "<group>"; };
+		EA8DAFF911E3DD8F008D4456 /* PRoof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRoof.h; sourceTree = "<group>"; };
+		EA8DAFFA11E3DD8F008D4456 /* PRoofPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRoofPoint.h; sourceTree = "<group>"; };
+		EA8DAFFB11E3DD8F008D4456 /* PRoofProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRoofProfile.h; sourceTree = "<group>"; };
+		EA8DAFFC11E3DD8F008D4456 /* PRoofZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRoofZone.h; sourceTree = "<group>"; };
+		EA8DAFFD11E3DD8F008D4456 /* PRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRoom.h; sourceTree = "<group>"; };
+		EA8DAFFE11E3DD8F008D4456 /* PSubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSubObject.h; sourceTree = "<group>"; };
+		EA8DAFFF11E3DD8F008D4456 /* PTessellator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTessellator.h; sourceTree = "<group>"; };
+		EA8DB00011E3DD8F008D4456 /* PVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVertex.h; sourceTree = "<group>"; };
+		EA8DB00111E3DD8F008D4456 /* PWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWall.h; sourceTree = "<group>"; };
+		EA8DB00211E3DD8F008D4456 /* PWallWithCrenel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWallWithCrenel.h; sourceTree = "<group>"; };
+		EA8DB00411E3DD8F008D4456 /* Tessellation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tessellation.h; sourceTree = "<group>"; };
+		EA8DB00511E3DD8F008D4456 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		EA8DB00611E3DD8F008D4456 /* ArchiTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiTools.cpp; sourceTree = "<group>"; };
+		EA8DB00711E3DD8F008D4456 /* AssembleRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssembleRoom.cpp; sourceTree = "<group>"; };
+		EA8DB00811E3DD8F008D4456 /* BuildingModeler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildingModeler.cpp; sourceTree = "<group>"; };
+		EA8DB00A11E3DD8F008D4456 /* BuildingPrim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildingPrim.cpp; sourceTree = "<group>"; };
+		EA8DB00B11E3DD8F008D4456 /* BuildingPrimitiveData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildingPrimitiveData.cpp; sourceTree = "<group>"; };
+		EA8DB00C11E3DD8F008D4456 /* MBuildingAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingAction.cpp; sourceTree = "<group>"; };
+		EA8DB00D11E3DD8F008D4456 /* MBuildingCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingCache.cpp; sourceTree = "<group>"; };
+		EA8DB00E11E3DD8F008D4456 /* MBuildingDragAndDrop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingDragAndDrop.cpp; sourceTree = "<group>"; };
+		EA8DB00F11E3DD8F008D4456 /* MBuildingPanePart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingPanePart.cpp; sourceTree = "<group>"; };
+		EA8DB01011E3DD8F008D4456 /* MBuildingProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingProperties.cpp; sourceTree = "<group>"; };
+		EA8DB01111E3DD8F008D4456 /* MBuildingRenderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBuildingRenderable.cpp; sourceTree = "<group>"; };
+		EA8DB01211E3DD8F008D4456 /* MChildrenActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MChildrenActions.cpp; sourceTree = "<group>"; };
+		EA8DB01311E3DD8F008D4456 /* MCreateActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCreateActions.cpp; sourceTree = "<group>"; };
+		EA8DB01411E3DD8F008D4456 /* MDefaultSettingActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDefaultSettingActions.cpp; sourceTree = "<group>"; };
+		EA8DB01511E3DD8F008D4456 /* MEditActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MEditActions.cpp; sourceTree = "<group>"; };
+		EA8DB01611E3DD8F008D4456 /* MImportCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MImportCurve.cpp; sourceTree = "<group>"; };
+		EA8DB01711E3DD8F008D4456 /* MInsertionAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MInsertionAction.cpp; sourceTree = "<group>"; };
+		EA8DB01811E3DD8F008D4456 /* MMouseDown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMouseDown.cpp; sourceTree = "<group>"; };
+		EA8DB01911E3DD8F008D4456 /* MPicking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPicking.cpp; sourceTree = "<group>"; };
+		EA8DB01A11E3DD8F008D4456 /* MPositionActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPositionActions.cpp; sourceTree = "<group>"; };
+		EA8DB01B11E3DD8F008D4456 /* MSelectionActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSelectionActions.cpp; sourceTree = "<group>"; };
+		EA8DB01C11E3DD8F008D4456 /* PBooleanPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PBooleanPolygon.cpp; sourceTree = "<group>"; };
+		EA8DB01D11E3DD8F008D4456 /* PBuildingVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PBuildingVisitor.cpp; sourceTree = "<group>"; };
+		EA8DB01E11E3DD8F008D4456 /* PCircleArc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PCircleArc.cpp; sourceTree = "<group>"; };
+		EA8DB01F11E3DD8F008D4456 /* PCommonBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PCommonBase.cpp; sourceTree = "<group>"; };
+		EA8DB02011E3DD8F008D4456 /* PConstrPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PConstrPoint.cpp; sourceTree = "<group>"; };
+		EA8DB02111E3DD8F008D4456 /* PCutter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PCutter.cpp; sourceTree = "<group>"; };
+		EA8DB02211E3DD8F008D4456 /* PFacet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PFacet.cpp; sourceTree = "<group>"; };
+		EA8DB02311E3DD8F008D4456 /* PLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PLevel.cpp; sourceTree = "<group>"; };
+		EA8DB02411E3DD8F008D4456 /* PNames.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PNames.cpp; sourceTree = "<group>"; };
+		EA8DB02511E3DD8F008D4456 /* POutlinePoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = POutlinePoint.cpp; sourceTree = "<group>"; };
+		EA8DB02611E3DD8F008D4456 /* PPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPlan.cpp; sourceTree = "<group>"; };
+		EA8DB02711E3DD8F008D4456 /* PPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPoint.cpp; sourceTree = "<group>"; };
+		EA8DB02811E3DD8F008D4456 /* PQuotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PQuotation.cpp; sourceTree = "<group>"; };
+		EA8DB02911E3DD8F008D4456 /* PRoof.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRoof.cpp; sourceTree = "<group>"; };
+		EA8DB02A11E3DD8F008D4456 /* PRoofPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRoofPoint.cpp; sourceTree = "<group>"; };
+		EA8DB02B11E3DD8F008D4456 /* PRoofProfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRoofProfile.cpp; sourceTree = "<group>"; };
+		EA8DB02C11E3DD8F008D4456 /* PRoofZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRoofZone.cpp; sourceTree = "<group>"; };
+		EA8DB02D11E3DD8F008D4456 /* PRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRoom.cpp; sourceTree = "<group>"; };
+		EA8DB02E11E3DD8F008D4456 /* PSubObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSubObject.cpp; sourceTree = "<group>"; };
+		EA8DB02F11E3DD8F008D4456 /* PTessellator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PTessellator.cpp; sourceTree = "<group>"; };
+		EA8DB03011E3DD8F008D4456 /* PVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVertex.cpp; sourceTree = "<group>"; };
+		EA8DB03111E3DD8F008D4456 /* PWall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PWall.cpp; sourceTree = "<group>"; };
+		EA8DB03211E3DD8F008D4456 /* PWallWithCrenel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PWallWithCrenel.cpp; sourceTree = "<group>"; };
+		EA8DB03411E3DD8F008D4456 /* Tessellation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tessellation.cpp; sourceTree = "<group>"; };
+		EA8DB03511E3DD8F008D4456 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		EA8DB03B11E3DD8F008D4456 /* booleng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = booleng.cpp; sourceTree = "<group>"; };
+		EA8DB03C11E3DD8F008D4456 /* booleng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = booleng.h; sourceTree = "<group>"; };
+		EA8DB03D11E3DD8F008D4456 /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph.cpp; sourceTree = "<group>"; };
+		EA8DB03E11E3DD8F008D4456 /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		EA8DB03F11E3DD8F008D4456 /* graphlst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphlst.cpp; sourceTree = "<group>"; };
+		EA8DB04011E3DD8F008D4456 /* graphlst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphlst.h; sourceTree = "<group>"; };
+		EA8DB04111E3DD8F008D4456 /* instonly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = instonly.cpp; sourceTree = "<group>"; };
+		EA8DB04211E3DD8F008D4456 /* kboolmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kboolmod.h; sourceTree = "<group>"; };
+		EA8DB04311E3DD8F008D4456 /* line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line.cpp; sourceTree = "<group>"; };
+		EA8DB04411E3DD8F008D4456 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.h; sourceTree = "<group>"; };
+		EA8DB04511E3DD8F008D4456 /* link.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = link.cpp; sourceTree = "<group>"; };
+		EA8DB04611E3DD8F008D4456 /* link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = link.h; sourceTree = "<group>"; };
+		EA8DB04711E3DD8F008D4456 /* lpoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lpoint.cpp; sourceTree = "<group>"; };
+		EA8DB04811E3DD8F008D4456 /* lpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpoint.h; sourceTree = "<group>"; };
+		EA8DB04911E3DD8F008D4456 /* node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = node.cpp; sourceTree = "<group>"; };
+		EA8DB04A11E3DD8F008D4456 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		EA8DB04B11E3DD8F008D4456 /* record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = record.cpp; sourceTree = "<group>"; };
+		EA8DB04C11E3DD8F008D4456 /* record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = record.h; sourceTree = "<group>"; };
+		EA8DB04D11E3DD8F008D4456 /* scanbeam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scanbeam.cpp; sourceTree = "<group>"; };
+		EA8DB04E11E3DD8F008D4456 /* scanbeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanbeam.h; sourceTree = "<group>"; };
+		EA8DB04F11E3DD8F008D4456 /* statusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusb.h; sourceTree = "<group>"; };
+		EA8DB05011E3DD8F008D4456 /* valuesvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = valuesvc.h; sourceTree = "<group>"; };
+		EA8DB05111E3DD8F008D4456 /* ArchiTools.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = ArchiTools.r; sourceTree = "<group>"; };
+		EA8DB05311E3DD8F008D4456 /* ArchiTools.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArchiTools.def; sourceTree = "<group>"; };
+		EA8DB05411E3DD8F008D4456 /* ArchiTools.rsr */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArchiTools.rsr; sourceTree = "<group>"; };
+		EA8DB0B211E3E2FA008D4456 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		EA8DB0B811E3E324008D4456 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95CE14E10A897A1C0055D091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */,
+				D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */,
+				EA8DB0B311E3E2FA008D4456 /* OpenGL.framework in Frameworks */,
+				EA8DB0B911E3E324008D4456 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				EA8DB0B811E3E324008D4456 /* GLUT.framework */,
+				EA8DB0B211E3E2FA008D4456 /* OpenGL.framework */,
+				EA8DAFD411E3DD8F008D4456 /* ArchiTools.h */,
+				EA8DAFD511E3DD8F008D4456 /* AssembleRoom.h */,
+				EA8DAFD611E3DD8F008D4456 /* BuildingDef.h */,
+				EA8DAFD711E3DD8F008D4456 /* BuildingModeler.h */,
+				EA8DAFD811E3DD8F008D4456 /* BuildingModelerEnums.h */,
+				EA8DAFD911E3DD8F008D4456 /* BuildingPrim.h */,
+				EA8DAFDA11E3DD8F008D4456 /* BuildingPrimitiveData.h */,
+				EA8DAFDB11E3DD8F008D4456 /* MBuildingAction.h */,
+				EA8DAFDC11E3DD8F008D4456 /* MBuildingCache.h */,
+				EA8DAFDD11E3DD8F008D4456 /* MBuildingDragAndDrop.h */,
+				EA8DAFDE11E3DD8F008D4456 /* MBuildingPanePart.h */,
+				EA8DAFDF11E3DD8F008D4456 /* MBuildingProperties.h */,
+				EA8DAFE011E3DD8F008D4456 /* MBuildingRenderable.h */,
+				EA8DAFE111E3DD8F008D4456 /* MChildrenActions.h */,
+				EA8DAFE211E3DD8F008D4456 /* MCreateActions.h */,
+				EA8DAFE311E3DD8F008D4456 /* MDefaultSettingActions.h */,
+				EA8DAFE411E3DD8F008D4456 /* MEditActions.h */,
+				EA8DAFE511E3DD8F008D4456 /* MImportCurve.h */,
+				EA8DAFE611E3DD8F008D4456 /* MInsertionAction.h */,
+				EA8DAFE711E3DD8F008D4456 /* MMouseDown.h */,
+				EA8DAFE811E3DD8F008D4456 /* MPicking.h */,
+				EA8DAFE911E3DD8F008D4456 /* MPositionActions.h */,
+				EA8DAFEA11E3DD8F008D4456 /* MSelectionActions.h */,
+				EA8DAFEB11E3DD8F008D4456 /* PBooleanPolygon.h */,
+				EA8DAFEC11E3DD8F008D4456 /* PBuildingVisitor.h */,
+				EA8DAFED11E3DD8F008D4456 /* PCircleArc.h */,
+				EA8DAFEE11E3DD8F008D4456 /* PCommonBase.h */,
+				EA8DAFEF11E3DD8F008D4456 /* PConstrPoint.h */,
+				EA8DAFF011E3DD8F008D4456 /* PCutter.h */,
+				EA8DAFF111E3DD8F008D4456 /* PFacet.h */,
+				EA8DAFF211E3DD8F008D4456 /* PLevel.h */,
+				EA8DAFF311E3DD8F008D4456 /* PNames.h */,
+				EA8DAFF411E3DD8F008D4456 /* PolygonToolBoolean.h */,
+				EA8DAFF511E3DD8F008D4456 /* POutlinePoint.h */,
+				EA8DAFF611E3DD8F008D4456 /* PPlan.h */,
+				EA8DAFF711E3DD8F008D4456 /* PPoint.h */,
+				EA8DAFF811E3DD8F008D4456 /* PQuotation.h */,
+				EA8DAFF911E3DD8F008D4456 /* PRoof.h */,
+				EA8DAFFA11E3DD8F008D4456 /* PRoofPoint.h */,
+				EA8DAFFB11E3DD8F008D4456 /* PRoofProfile.h */,
+				EA8DAFFC11E3DD8F008D4456 /* PRoofZone.h */,
+				EA8DAFFD11E3DD8F008D4456 /* PRoom.h */,
+				EA8DAFFE11E3DD8F008D4456 /* PSubObject.h */,
+				EA8DAFFF11E3DD8F008D4456 /* PTessellator.h */,
+				EA8DB00011E3DD8F008D4456 /* PVertex.h */,
+				EA8DB00111E3DD8F008D4456 /* PWall.h */,
+				EA8DB00211E3DD8F008D4456 /* PWallWithCrenel.h */,
+				EA8DB00411E3DD8F008D4456 /* Tessellation.h */,
+				EA8DB00511E3DD8F008D4456 /* Utils.h */,
+				EA8DB00611E3DD8F008D4456 /* ArchiTools.cpp */,
+				EA8DB00711E3DD8F008D4456 /* AssembleRoom.cpp */,
+				EA8DB00811E3DD8F008D4456 /* BuildingModeler.cpp */,
+				EA8DB00A11E3DD8F008D4456 /* BuildingPrim.cpp */,
+				EA8DB00B11E3DD8F008D4456 /* BuildingPrimitiveData.cpp */,
+				EA8DB00C11E3DD8F008D4456 /* MBuildingAction.cpp */,
+				EA8DB00D11E3DD8F008D4456 /* MBuildingCache.cpp */,
+				EA8DB00E11E3DD8F008D4456 /* MBuildingDragAndDrop.cpp */,
+				EA8DB00F11E3DD8F008D4456 /* MBuildingPanePart.cpp */,
+				EA8DB01011E3DD8F008D4456 /* MBuildingProperties.cpp */,
+				EA8DB01111E3DD8F008D4456 /* MBuildingRenderable.cpp */,
+				EA8DB01211E3DD8F008D4456 /* MChildrenActions.cpp */,
+				EA8DB01311E3DD8F008D4456 /* MCreateActions.cpp */,
+				EA8DB01411E3DD8F008D4456 /* MDefaultSettingActions.cpp */,
+				EA8DB01511E3DD8F008D4456 /* MEditActions.cpp */,
+				EA8DB01611E3DD8F008D4456 /* MImportCurve.cpp */,
+				EA8DB01711E3DD8F008D4456 /* MInsertionAction.cpp */,
+				EA8DB01811E3DD8F008D4456 /* MMouseDown.cpp */,
+				EA8DB01911E3DD8F008D4456 /* MPicking.cpp */,
+				EA8DB01A11E3DD8F008D4456 /* MPositionActions.cpp */,
+				EA8DB01B11E3DD8F008D4456 /* MSelectionActions.cpp */,
+				EA8DB01C11E3DD8F008D4456 /* PBooleanPolygon.cpp */,
+				EA8DB01D11E3DD8F008D4456 /* PBuildingVisitor.cpp */,
+				EA8DB01E11E3DD8F008D4456 /* PCircleArc.cpp */,
+				EA8DB01F11E3DD8F008D4456 /* PCommonBase.cpp */,
+				EA8DB02011E3DD8F008D4456 /* PConstrPoint.cpp */,
+				EA8DB02111E3DD8F008D4456 /* PCutter.cpp */,
+				EA8DB02211E3DD8F008D4456 /* PFacet.cpp */,
+				EA8DB02311E3DD8F008D4456 /* PLevel.cpp */,
+				EA8DB02411E3DD8F008D4456 /* PNames.cpp */,
+				EA8DB02511E3DD8F008D4456 /* POutlinePoint.cpp */,
+				EA8DB02611E3DD8F008D4456 /* PPlan.cpp */,
+				EA8DB02711E3DD8F008D4456 /* PPoint.cpp */,
+				EA8DB02811E3DD8F008D4456 /* PQuotation.cpp */,
+				EA8DB02911E3DD8F008D4456 /* PRoof.cpp */,
+				EA8DB02A11E3DD8F008D4456 /* PRoofPoint.cpp */,
+				EA8DB02B11E3DD8F008D4456 /* PRoofProfile.cpp */,
+				EA8DB02C11E3DD8F008D4456 /* PRoofZone.cpp */,
+				EA8DB02D11E3DD8F008D4456 /* PRoom.cpp */,
+				EA8DB02E11E3DD8F008D4456 /* PSubObject.cpp */,
+				EA8DB02F11E3DD8F008D4456 /* PTessellator.cpp */,
+				EA8DB03011E3DD8F008D4456 /* PVertex.cpp */,
+				EA8DB03111E3DD8F008D4456 /* PWall.cpp */,
+				EA8DB03211E3DD8F008D4456 /* PWallWithCrenel.cpp */,
+				EA8DB03411E3DD8F008D4456 /* Tessellation.cpp */,
+				EA8DB03511E3DD8F008D4456 /* Utils.cpp */,
+				EA5FE03014AA2D5200686395 /* Common */,
+				EA8DB03611E3DD8F008D4456 /* kbool */,
+				EA8DB05111E3DD8F008D4456 /* ArchiTools.r */,
+				EA8DB05311E3DD8F008D4456 /* ArchiTools.def */,
+				EA8DB05411E3DD8F008D4456 /* ArchiTools.rsr */,
+				D98CCF8A1175BF8000446CDD /* QtCore.framework */,
+				D98CCF8B1175BF8000446CDD /* QtGui.framework */,
+				951F592A0A8A710D007B49F5 /* COMUtilities.cpp */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95CE14E30A897A1C0055D091 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5FE03014AA2D5200686395 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FE04214AA2D8300686395 /* SerialNumber.h */,
+				EA5FE04314AA2D8300686395 /* SerialNumber.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		EA8DB03611E3DD8F008D4456 /* kbool */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DB03B11E3DD8F008D4456 /* booleng.cpp */,
+				EA8DB03C11E3DD8F008D4456 /* booleng.h */,
+				EA8DB03D11E3DD8F008D4456 /* graph.cpp */,
+				EA8DB03E11E3DD8F008D4456 /* graph.h */,
+				EA8DB03F11E3DD8F008D4456 /* graphlst.cpp */,
+				EA8DB04011E3DD8F008D4456 /* graphlst.h */,
+				EA8DB04111E3DD8F008D4456 /* instonly.cpp */,
+				EA8DB04211E3DD8F008D4456 /* kboolmod.h */,
+				EA8DB04311E3DD8F008D4456 /* line.cpp */,
+				EA8DB04411E3DD8F008D4456 /* line.h */,
+				EA8DB04511E3DD8F008D4456 /* link.cpp */,
+				EA8DB04611E3DD8F008D4456 /* link.h */,
+				EA8DB04711E3DD8F008D4456 /* lpoint.cpp */,
+				EA8DB04811E3DD8F008D4456 /* lpoint.h */,
+				EA8DB04911E3DD8F008D4456 /* node.cpp */,
+				EA8DB04A11E3DD8F008D4456 /* node.h */,
+				EA8DB04B11E3DD8F008D4456 /* record.cpp */,
+				EA8DB04C11E3DD8F008D4456 /* record.h */,
+				EA8DB04D11E3DD8F008D4456 /* scanbeam.cpp */,
+				EA8DB04E11E3DD8F008D4456 /* scanbeam.h */,
+				EA8DB04F11E3DD8F008D4456 /* statusb.h */,
+				EA8DB05011E3DD8F008D4456 /* valuesvc.h */,
+			);
+			path = kbool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95CE14E20A897A1C0055D091 /* Myextension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */;
+			buildPhases = (
+				95CE14E00A897A1C0055D091 /* Sources */,
+				95CE14E10A897A1C0055D091 /* Frameworks */,
+				95C1E7C20A8A8E1300F4A996 /* Rez */,
+				95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Myextension;
+			productName = Myextension;
+			productReference = 95CE14E30A897A1C0055D091 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95CE14E20A897A1C0055D091 /* Myextension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		95C1E7C20A8A8E1300F4A996 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8DB09111E3DD8F008D4456 /* ArchiTools.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n../../../Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95CE14E00A897A1C0055D091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */,
+				EA8DB05511E3DD8F008D4456 /* ArchiTools.cpp in Sources */,
+				EA8DB05611E3DD8F008D4456 /* AssembleRoom.cpp in Sources */,
+				EA8DB05711E3DD8F008D4456 /* BuildingModeler.cpp in Sources */,
+				EA8DB05911E3DD8F008D4456 /* BuildingPrim.cpp in Sources */,
+				EA8DB05A11E3DD8F008D4456 /* BuildingPrimitiveData.cpp in Sources */,
+				EA8DB05B11E3DD8F008D4456 /* MBuildingAction.cpp in Sources */,
+				EA8DB05C11E3DD8F008D4456 /* MBuildingCache.cpp in Sources */,
+				EA8DB05D11E3DD8F008D4456 /* MBuildingDragAndDrop.cpp in Sources */,
+				EA8DB05E11E3DD8F008D4456 /* MBuildingPanePart.cpp in Sources */,
+				EA8DB05F11E3DD8F008D4456 /* MBuildingProperties.cpp in Sources */,
+				EA8DB06011E3DD8F008D4456 /* MBuildingRenderable.cpp in Sources */,
+				EA8DB06111E3DD8F008D4456 /* MChildrenActions.cpp in Sources */,
+				EA8DB06211E3DD8F008D4456 /* MCreateActions.cpp in Sources */,
+				EA8DB06311E3DD8F008D4456 /* MDefaultSettingActions.cpp in Sources */,
+				EA8DB06411E3DD8F008D4456 /* MEditActions.cpp in Sources */,
+				EA8DB06511E3DD8F008D4456 /* MImportCurve.cpp in Sources */,
+				EA8DB06611E3DD8F008D4456 /* MInsertionAction.cpp in Sources */,
+				EA8DB06711E3DD8F008D4456 /* MMouseDown.cpp in Sources */,
+				EA8DB06811E3DD8F008D4456 /* MPicking.cpp in Sources */,
+				EA8DB06911E3DD8F008D4456 /* MPositionActions.cpp in Sources */,
+				EA8DB06A11E3DD8F008D4456 /* MSelectionActions.cpp in Sources */,
+				EA8DB06B11E3DD8F008D4456 /* PBooleanPolygon.cpp in Sources */,
+				EA8DB06C11E3DD8F008D4456 /* PBuildingVisitor.cpp in Sources */,
+				EA8DB06D11E3DD8F008D4456 /* PCircleArc.cpp in Sources */,
+				EA8DB06E11E3DD8F008D4456 /* PCommonBase.cpp in Sources */,
+				EA8DB06F11E3DD8F008D4456 /* PConstrPoint.cpp in Sources */,
+				EA8DB07011E3DD8F008D4456 /* PCutter.cpp in Sources */,
+				EA8DB07111E3DD8F008D4456 /* PFacet.cpp in Sources */,
+				EA8DB07211E3DD8F008D4456 /* PLevel.cpp in Sources */,
+				EA8DB07311E3DD8F008D4456 /* PNames.cpp in Sources */,
+				EA8DB07411E3DD8F008D4456 /* POutlinePoint.cpp in Sources */,
+				EA8DB07511E3DD8F008D4456 /* PPlan.cpp in Sources */,
+				EA8DB07611E3DD8F008D4456 /* PPoint.cpp in Sources */,
+				EA8DB07711E3DD8F008D4456 /* PQuotation.cpp in Sources */,
+				EA8DB07811E3DD8F008D4456 /* PRoof.cpp in Sources */,
+				EA8DB07911E3DD8F008D4456 /* PRoofPoint.cpp in Sources */,
+				EA8DB07A11E3DD8F008D4456 /* PRoofProfile.cpp in Sources */,
+				EA8DB07B11E3DD8F008D4456 /* PRoofZone.cpp in Sources */,
+				EA8DB07C11E3DD8F008D4456 /* PRoom.cpp in Sources */,
+				EA8DB07D11E3DD8F008D4456 /* PSubObject.cpp in Sources */,
+				EA8DB07E11E3DD8F008D4456 /* PTessellator.cpp in Sources */,
+				EA8DB07F11E3DD8F008D4456 /* PVertex.cpp in Sources */,
+				EA8DB08011E3DD8F008D4456 /* PWall.cpp in Sources */,
+				EA8DB08111E3DD8F008D4456 /* PWallWithCrenel.cpp in Sources */,
+				EA8DB08311E3DD8F008D4456 /* Tessellation.cpp in Sources */,
+				EA8DB08411E3DD8F008D4456 /* Utils.cpp in Sources */,
+				EA8DB08711E3DD8F008D4456 /* booleng.cpp in Sources */,
+				EA8DB08811E3DD8F008D4456 /* graph.cpp in Sources */,
+				EA8DB08911E3DD8F008D4456 /* graphlst.cpp in Sources */,
+				EA8DB08A11E3DD8F008D4456 /* instonly.cpp in Sources */,
+				EA8DB08B11E3DD8F008D4456 /* line.cpp in Sources */,
+				EA8DB08C11E3DD8F008D4456 /* link.cpp in Sources */,
+				EA8DB08D11E3DD8F008D4456 /* lpoint.cpp in Sources */,
+				EA8DB08E11E3DD8F008D4456 /* node.cpp in Sources */,
+				EA8DB08F11E3DD8F008D4456 /* record.cpp in Sources */,
+				EA8DB09011E3DD8F008D4456 /* scanbeam.cpp in Sources */,
+				EA5FE04414AA2D8300686395 /* SerialNumber.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8.5 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_x86_64;
+		};
+		95CE14CC0A8978E00055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8.5 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_x86_64;
+		};
+		95CE14E50A897A3A0055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_x86_64;
+		};
+		95CE14E60A897A3A0055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_x86_64;
+		};
+		D98CCF941175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8.5_i386/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_i386;
+		};
+		D98CCF951175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_i386;
+		};
+		D98CCF961175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_ppc;
+		};
+		D98CCF971175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_ppc;
+		};
+		D98CCF981175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8.5_i386/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_i386;
+		};
+		D98CCF991175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_i386;
+		};
+		D98CCF9A1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_ppc;
+		};
+		D98CCF9B1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_ppc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug_x86_64 */,
+				D98CCF941175C00B00446CDD /* Debug_i386 */,
+				D98CCF961175C00B00446CDD /* Debug_ppc */,
+				95CE14CC0A8978E00055D091 /* Release_x86_64 */,
+				D98CCF981175C02E00446CDD /* Release_i386 */,
+				D98CCF9A1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+		95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14E50A897A3A0055D091 /* Debug_x86_64 */,
+				D98CCF951175C00B00446CDD /* Debug_i386 */,
+				D98CCF971175C00B00446CDD /* Debug_ppc */,
+				95CE14E60A897A3A0055D091 /* Release_x86_64 */,
+				D98CCF991175C02E00446CDD /* Release_i386 */,
+				D98CCF9B1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}

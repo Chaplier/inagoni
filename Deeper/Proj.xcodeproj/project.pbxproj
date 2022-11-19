@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 951F592A0A8A710D007B49F5 /* COMUtilities.cpp */; };
+		D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8A1175BF8000446CDD /* QtCore.framework */; };
+		D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8B1175BF8000446CDD /* QtGui.framework */; };
+		EA5FE09C14AA300100686395 /* SerialNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA5FE09B14AA300100686395 /* SerialNumber.cpp */; };
+		EAAF364E12E1D299001ED6D0 /* Deeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAF364612E1D299001ED6D0 /* Deeper.cpp */; };
+		EAAF364F12E1D299001ED6D0 /* NormalMapRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAF364712E1D299001ED6D0 /* NormalMapRenderer.cpp */; };
+		EAAF365012E1D299001ED6D0 /* NormalMapShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAF364812E1D299001ED6D0 /* NormalMapShader.cpp */; };
+		EAAF365212E1D299001ED6D0 /* ToolBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAAF364A12E1D299001ED6D0 /* ToolBox.cpp */; };
+		EAAF36A212E1D745001ED6D0 /* Deeper.r in Rez */ = {isa = PBXBuildFile; fileRef = EAAF36A112E1D745001ED6D0 /* Deeper.r */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		951F592A0A8A710D007B49F5 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../../Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		95CE14E30A897A1C0055D091 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98CCF8A1175BF8000446CDD /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		D98CCF8B1175BF8000446CDD /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		EA5FE09A14AA300100686395 /* SerialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerialNumber.h; path = ../Common/SerialNumber.h; sourceTree = SOURCE_ROOT; };
+		EA5FE09B14AA300100686395 /* SerialNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SerialNumber.cpp; path = ../Common/SerialNumber.cpp; sourceTree = SOURCE_ROOT; };
+		EAAF363F12E1D299001ED6D0 /* Deeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deeper.h; sourceTree = "<group>"; };
+		EAAF364012E1D299001ED6D0 /* NormalMapDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMapDef.h; sourceTree = "<group>"; };
+		EAAF364112E1D299001ED6D0 /* NormalMapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMapRenderer.h; sourceTree = "<group>"; };
+		EAAF364212E1D299001ED6D0 /* NormalMapShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMapShader.h; sourceTree = "<group>"; };
+		EAAF364412E1D299001ED6D0 /* ToolBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBox.h; sourceTree = "<group>"; };
+		EAAF364612E1D299001ED6D0 /* Deeper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deeper.cpp; sourceTree = "<group>"; };
+		EAAF364712E1D299001ED6D0 /* NormalMapRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalMapRenderer.cpp; sourceTree = "<group>"; };
+		EAAF364812E1D299001ED6D0 /* NormalMapShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalMapShader.cpp; sourceTree = "<group>"; };
+		EAAF364A12E1D299001ED6D0 /* ToolBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolBox.cpp; sourceTree = "<group>"; };
+		EAAF364B12E1D299001ED6D0 /* Deeper.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deeper.def; sourceTree = "<group>"; };
+		EAAF364C12E1D299001ED6D0 /* Deeper.rsr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deeper.rsr; sourceTree = "<group>"; };
+		EAAF36A112E1D745001ED6D0 /* Deeper.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Deeper.r; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95CE14E10A897A1C0055D091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */,
+				D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				EAAF36A112E1D745001ED6D0 /* Deeper.r */,
+				EAAF363F12E1D299001ED6D0 /* Deeper.h */,
+				EAAF364012E1D299001ED6D0 /* NormalMapDef.h */,
+				EAAF364112E1D299001ED6D0 /* NormalMapRenderer.h */,
+				EAAF364212E1D299001ED6D0 /* NormalMapShader.h */,
+				EAAF364412E1D299001ED6D0 /* ToolBox.h */,
+				EAAF364612E1D299001ED6D0 /* Deeper.cpp */,
+				EAAF364712E1D299001ED6D0 /* NormalMapRenderer.cpp */,
+				EAAF364812E1D299001ED6D0 /* NormalMapShader.cpp */,
+				EAAF364A12E1D299001ED6D0 /* ToolBox.cpp */,
+				EAAF364B12E1D299001ED6D0 /* Deeper.def */,
+				EAAF364C12E1D299001ED6D0 /* Deeper.rsr */,
+				EA87A6021258BFBD00BA9FBA /* Common */,
+				D98CCF8A1175BF8000446CDD /* QtCore.framework */,
+				D98CCF8B1175BF8000446CDD /* QtGui.framework */,
+				951F592A0A8A710D007B49F5 /* COMUtilities.cpp */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95CE14E30A897A1C0055D091 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA87A6021258BFBD00BA9FBA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FE09A14AA300100686395 /* SerialNumber.h */,
+				EA5FE09B14AA300100686395 /* SerialNumber.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95CE14E20A897A1C0055D091 /* Myextension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */;
+			buildPhases = (
+				95CE14E00A897A1C0055D091 /* Sources */,
+				95CE14E10A897A1C0055D091 /* Frameworks */,
+				95C1E7C20A8A8E1300F4A996 /* Rez */,
+				95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Myextension;
+			productName = Myextension;
+			productReference = 95CE14E30A897A1C0055D091 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95CE14E20A897A1C0055D091 /* Myextension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		95C1E7C20A8A8E1300F4A996 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAF36A212E1D745001ED6D0 /* Deeper.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n../../../Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions/inagoni\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95CE14E00A897A1C0055D091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */,
+				EAAF364E12E1D299001ED6D0 /* Deeper.cpp in Sources */,
+				EAAF364F12E1D299001ED6D0 /* NormalMapRenderer.cpp in Sources */,
+				EAAF365012E1D299001ED6D0 /* NormalMapShader.cpp in Sources */,
+				EAAF365212E1D299001ED6D0 /* ToolBox.cpp in Sources */,
+				EA5FE09C14AA300100686395 /* SerialNumber.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_x86_64;
+		};
+		95CE14CC0A8978E00055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_x86_64;
+		};
+		95CE14E50A897A3A0055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_x86_64;
+		};
+		95CE14E60A897A3A0055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_x86_64;
+		};
+		D98CCF941175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8_i386/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_i386;
+		};
+		D98CCF951175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_i386;
+		};
+		D98CCF961175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_ppc;
+		};
+		D98CCF971175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_ppc;
+		};
+		D98CCF981175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8_i386/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_i386;
+		};
+		D98CCF991175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_i386;
+		};
+		D98CCF9A1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_ppc;
+		};
+		D98CCF9B1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_ppc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug_x86_64 */,
+				D98CCF941175C00B00446CDD /* Debug_i386 */,
+				D98CCF961175C00B00446CDD /* Debug_ppc */,
+				95CE14CC0A8978E00055D091 /* Release_x86_64 */,
+				D98CCF981175C02E00446CDD /* Release_i386 */,
+				D98CCF9A1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+		95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14E50A897A3A0055D091 /* Debug_x86_64 */,
+				D98CCF951175C00B00446CDD /* Debug_i386 */,
+				D98CCF971175C00B00446CDD /* Debug_ppc */,
+				95CE14E60A897A3A0055D091 /* Release_x86_64 */,
+				D98CCF991175C02E00446CDD /* Release_i386 */,
+				D98CCF9B1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}

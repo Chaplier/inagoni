@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EC838FF-877C-40F4-B147-32F0D415AD35}</ProjectGuid>
+    <RootNamespace>Building</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="..\CarraraSDK.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="..\CarraraSDK.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="..\CarraraSDK.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+    <Import Project="..\CarraraSDK.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.mcx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.mcx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Building.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>"%40..\..\..\Build\CPFlags.opt" %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\kbool;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BUILDING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;mpr.lib;version.lib;vfw32.lib;CommonLibrary.lib;SafeLibrary.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Platform)/$(Configuration)/$(ProjectName).mcx</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../../lib/Win/x86/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ArchiTools.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Building.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>"%40..\..\..\Build\CPFlags.opt" %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\kbool;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BUILDING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;mpr.lib;version.lib;vfw32.lib;CommonLibrary.lib;SafeLibrary.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Platform)/$(Configuration)/$(ProjectName).mcx</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../../lib/Win/x64/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ArchiTools.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/Building.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>"%40..\..\..\Build\CPFlags.opt" %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\kbool;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BUILDING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;mpr.lib;version.lib;vfw32.lib;CommonLibrary.lib;SafeLibrary.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Platform)/$(Configuration)/$(ProjectName).mcx</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../../lib/Win/x86/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ArchiTools.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/Building.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>"%40..\..\..\Build\CPFlags.opt" %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\kbool;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BUILDING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;mpr.lib;version.lib;vfw32.lib;CommonLibrary.lib;SafeLibrary.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(Platform)/$(Configuration)/$(ProjectName).mcx</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../../lib/Win/x64/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ArchiTools.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{a375cbef-0eee-437c-ace5-c748ec89f1a1}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArchiTools.cpp" />
+    <ClCompile Include="AssembleRoom.cpp" />
+    <ClCompile Include="BuildingModeler.cpp" />
+    <ClCompile Include="BuildingPrim.cpp" />
+    <ClCompile Include="BuildingPrimitiveData.cpp" />
+    <ClCompile Include="MBuildingAction.cpp" />
+    <ClCompile Include="MBuildingCache.cpp" />
+    <ClCompile Include="MBuildingDragAndDrop.cpp" />
+    <ClCompile Include="MBuildingPanePart.cpp" />
+    <ClCompile Include="MBuildingProperties.cpp" />
+    <ClCompile Include="MBuildingRenderable.cpp" />
+    <ClCompile Include="MChildrenActions.cpp" />
+    <ClCompile Include="MCreateActions.cpp" />
+    <ClCompile Include="MDefaultSettingActions.cpp" />
+    <ClCompile Include="MEditActions.cpp" />
+    <ClCompile Include="MImportCurve.cpp" />
+    <ClCompile Include="MInsertionAction.cpp" />
+    <ClCompile Include="MMouseDown.cpp" />
+    <ClCompile Include="MPicking.cpp" />
+    <ClCompile Include="MPositionActions.cpp" />
+    <ClCompile Include="MSelectionActions.cpp" />
+    <ClCompile Include="PBooleanPolygon.cpp" />
+    <ClCompile Include="PBuildingVisitor.cpp" />
+    <ClCompile Include="PCircleArc.cpp" />
+    <ClCompile Include="PCommonBase.cpp" />
+    <ClCompile Include="PConstrPoint.cpp" />
+    <ClCompile Include="PCutter.cpp" />
+    <ClCompile Include="PFacet.cpp" />
+    <ClCompile Include="PLevel.cpp" />
+    <ClCompile Include="PNames.cpp" />
+    <ClCompile Include="POutlinePoint.cpp" />
+    <ClCompile Include="PPlan.cpp" />
+    <ClCompile Include="PPoint.cpp" />
+    <ClCompile Include="PQuotation.cpp" />
+    <ClCompile Include="PRoof.cpp" />
+    <ClCompile Include="PRoofPoint.cpp" />
+    <ClCompile Include="PRoofProfile.cpp" />
+    <ClCompile Include="PRoofZone.cpp" />
+    <ClCompile Include="PRoom.cpp" />
+    <ClCompile Include="PSubObject.cpp" />
+    <ClCompile Include="PTessellator.cpp" />
+    <ClCompile Include="PVertex.cpp" />
+    <ClCompile Include="PWall.cpp" />
+    <ClCompile Include="PWallWithCrenel.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="..\..\..\Source\COMUtilities.cpp" />
+    <ClCompile Include="Tessellation.cpp" />
+    <ClCompile Include="kbool\booleng.cpp" />
+    <ClCompile Include="kbool\graph.cpp" />
+    <ClCompile Include="kbool\graphlst.cpp" />
+    <ClCompile Include="kbool\instonly.cpp" />
+    <ClCompile Include="kbool\line.cpp" />
+    <ClCompile Include="kbool\link.cpp" />
+    <ClCompile Include="kbool\lpoint.cpp" />
+    <ClCompile Include="kbool\node.cpp" />
+    <ClCompile Include="kbool\record.cpp" />
+    <ClCompile Include="kbool\scanbeam.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArchiTools.h" />
+    <ClInclude Include="AssembleRoom.h" />
+    <ClInclude Include="BuildingDef.h" />
+    <ClInclude Include="BuildingModeler.h" />
+    <ClInclude Include="BuildingPrim.h" />
+    <ClInclude Include="BuildingPrimitiveData.h" />
+    <ClInclude Include="MBuildingAction.h" />
+    <ClInclude Include="MBuildingCache.h" />
+    <ClInclude Include="MBuildingDragAndDrop.h" />
+    <ClInclude Include="MBuildingPanePart.h" />
+    <ClInclude Include="MBuildingProperties.h" />
+    <ClInclude Include="MBuildingRenderable.h" />
+    <ClInclude Include="MChildrenActions.h" />
+    <ClInclude Include="MCreateActions.h" />
+    <ClInclude Include="MDefaultSettingActions.h" />
+    <ClInclude Include="MEditActions.h" />
+    <ClInclude Include="MImportCurve.h" />
+    <ClInclude Include="MInsertionAction.h" />
+    <ClInclude Include="MMouseDown.h" />
+    <ClInclude Include="MPicking.h" />
+    <ClInclude Include="MPositionActions.h" />
+    <ClInclude Include="MSelectionActions.h" />
+    <ClInclude Include="PBooleanPolygon.h" />
+    <ClInclude Include="PBuildingVisitor.h" />
+    <ClInclude Include="PCircleArc.h" />
+    <ClInclude Include="PCommonBase.h" />
+    <ClInclude Include="PConstrPoint.h" />
+    <ClInclude Include="PCutter.h" />
+    <ClInclude Include="PFacet.h" />
+    <ClInclude Include="PLevel.h" />
+    <ClInclude Include="PNames.h" />
+    <ClInclude Include="POutlinePoint.h" />
+    <ClInclude Include="PPlan.h" />
+    <ClInclude Include="PPoint.h" />
+    <ClInclude Include="PQuotation.h" />
+    <ClInclude Include="PRoof.h" />
+    <ClInclude Include="PRoofPoint.h" />
+    <ClInclude Include="PRoofProfile.h" />
+    <ClInclude Include="PRoofZone.h" />
+    <ClInclude Include="PRoom.h" />
+    <ClInclude Include="PSubObject.h" />
+    <ClInclude Include="PTessellator.h" />
+    <ClInclude Include="PVertex.h" />
+    <ClInclude Include="PWall.h" />
+    <ClInclude Include="PWallWithCrenel.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="..\..\..\Include\Common\BasicCOMExtImplementations.h" />
+    <ClInclude Include="..\..\..\Include\Common\BasicCOMImplementations.h" />
+    <ClInclude Include="..\..\..\Include\Carrara\BasicPrimitive.h" />
+    <ClInclude Include="..\..\..\Include\Common\COMUtilities.h" />
+    <ClInclude Include="Tessellation.h" />
+    <ClInclude Include="kbool\booleng.h" />
+    <ClInclude Include="kbool\graph.h" />
+    <ClInclude Include="kbool\graphlst.h" />
+    <ClInclude Include="kbool\kboolmod.h" />
+    <ClInclude Include="kbool\line.h" />
+    <ClInclude Include="kbool\link.h" />
+    <ClInclude Include="kbool\lpoint.h" />
+    <ClInclude Include="kbool\node.h" />
+    <ClInclude Include="kbool\record.h" />
+    <ClInclude Include="kbool\scanbeam.h" />
+    <ClInclude Include="kbool\statusb.h" />
+    <ClInclude Include="kbool\valuesvc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ArchiTools.r" />
+    <None Include="ArchiTools.rsr" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

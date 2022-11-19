@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 951F592A0A8A710D007B49F5 /* COMUtilities.cpp */; };
+		D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8A1175BF8000446CDD /* QtCore.framework */; };
+		D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98CCF8B1175BF8000446CDD /* QtGui.framework */; };
+		EA23E02211DF878E00BF44A1 /* 2DTransformBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00111DF878E00BF44A1 /* 2DTransformBase.cpp */; };
+		EA23E02311DF878E00BF44A1 /* 3DTransformBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00211DF878E00BF44A1 /* 3DTransformBase.cpp */; };
+		EA23E02411DF878E00BF44A1 /* BumpNoise2DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00311DF878E00BF44A1 /* BumpNoise2DShader.cpp */; };
+		EA23E02511DF878E00BF44A1 /* BumpNoise3DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00411DF878E00BF44A1 /* BumpNoise3DShader.cpp */; };
+		EA23E02611DF878E00BF44A1 /* Engine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00511DF878E00BF44A1 /* Engine1.cpp */; };
+		EA23E02711DF878E00BF44A1 /* Engine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00611DF878E00BF44A1 /* Engine2.cpp */; };
+		EA23E02811DF878E00BF44A1 /* Engine3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00711DF878E00BF44A1 /* Engine3.cpp */; };
+		EA23E02911DF878E00BF44A1 /* Engine4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00811DF878E00BF44A1 /* Engine4.cpp */; };
+		EA23E02A11DF878E00BF44A1 /* FilterShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00911DF878E00BF44A1 /* FilterShader.cpp */; };
+		EA23E02B11DF878E00BF44A1 /* Gradient2DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00A11DF878E00BF44A1 /* Gradient2DShader.cpp */; };
+		EA23E02C11DF878E00BF44A1 /* Gradient3DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00B11DF878E00BF44A1 /* Gradient3DShader.cpp */; };
+		EA23E02D11DF878E00BF44A1 /* GrayScaleBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00C11DF878E00BF44A1 /* GrayScaleBase.cpp */; };
+		EA23E02E11DF878E00BF44A1 /* GridShader1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00D11DF878E00BF44A1 /* GridShader1.cpp */; };
+		EA23E02F11DF878E00BF44A1 /* GridShader2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00E11DF878E00BF44A1 /* GridShader2.cpp */; };
+		EA23E03011DF878E00BF44A1 /* GridShader3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E00F11DF878E00BF44A1 /* GridShader3.cpp */; };
+		EA23E03111DF878E00BF44A1 /* GridShader4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01011DF878E00BF44A1 /* GridShader4.cpp */; };
+		EA23E03211DF878E00BF44A1 /* NoiseBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01111DF878E00BF44A1 /* NoiseBase.cpp */; };
+		EA23E03311DF878E00BF44A1 /* PartExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01211DF878E00BF44A1 /* PartExtension.cpp */; };
+		EA23E03411DF878E00BF44A1 /* PerturbationShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01311DF878E00BF44A1 /* PerturbationShader.cpp */; };
+		EA23E03511DF878E00BF44A1 /* RandomLines2DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01411DF878E00BF44A1 /* RandomLines2DShader.cpp */; };
+		EA23E03611DF878E00BF44A1 /* RandomLines3DShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01511DF878E00BF44A1 /* RandomLines3DShader.cpp */; };
+		EA23E03711DF878E00BF44A1 /* RoofShader1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01611DF878E00BF44A1 /* RoofShader1.cpp */; };
+		EA23E03911DF878E00BF44A1 /* ShaderBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01811DF878E00BF44A1 /* ShaderBase.cpp */; };
+		EA23E03A11DF878E00BF44A1 /* SubShadersUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01911DF878E00BF44A1 /* SubShadersUtils.cpp */; };
+		EA23E03B11DF878E00BF44A1 /* SuperSamplingBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01A11DF878E00BF44A1 /* SuperSamplingBase.cpp */; };
+		EA23E03C11DF878E00BF44A1 /* TilingShader1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01B11DF878E00BF44A1 /* TilingShader1.cpp */; };
+		EA23E03D11DF878E00BF44A1 /* TilingShader2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01C11DF878E00BF44A1 /* TilingShader2.cpp */; };
+		EA23E03E11DF878E00BF44A1 /* TilingShader3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01D11DF878E00BF44A1 /* TilingShader3.cpp */; };
+		EA23E03F11DF878E00BF44A1 /* TilingShader4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01E11DF878E00BF44A1 /* TilingShader4.cpp */; };
+		EA23E04011DF878E00BF44A1 /* Veloute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E01F11DF878E00BF44A1 /* Veloute.cpp */; };
+		EA23E04111DF878E00BF44A1 /* VoronoiBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E02011DF878E00BF44A1 /* VoronoiBase.cpp */; };
+		EA23E04211DF878E00BF44A1 /* WeaveShader1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA23E02111DF878E00BF44A1 /* WeaveShader1.cpp */; };
+		EA23E04511DF87AB00BF44A1 /* Veloute.r in Rez */ = {isa = PBXBuildFile; fileRef = EA23E04411DF87AB00BF44A1 /* Veloute.r */; };
+		EA5FE0E814AA30A200686395 /* SerialNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA5FE0E714AA30A200686395 /* SerialNumber.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		951F592A0A8A710D007B49F5 /* COMUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = COMUtilities.cpp; path = ../../../Source/COMUtilities.cpp; sourceTree = SOURCE_ROOT; };
+		95CE14E30A897A1C0055D091 /* Myextension.mcx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Myextension.mcx; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98CCF8A1175BF8000446CDD /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../Lib/Mac/Frameworks/QtCore.framework; sourceTree = SOURCE_ROOT; };
+		D98CCF8B1175BF8000446CDD /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../Lib/Mac/Frameworks/QtGui.framework; sourceTree = SOURCE_ROOT; };
+		EA23DFDE11DF878E00BF44A1 /* 2DTransformBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 2DTransformBase.h; sourceTree = "<group>"; };
+		EA23DFDF11DF878E00BF44A1 /* 3DTransformBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3DTransformBase.h; sourceTree = "<group>"; };
+		EA23DFE011DF878E00BF44A1 /* BumpNoise2DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpNoise2DShader.h; sourceTree = "<group>"; };
+		EA23DFE111DF878E00BF44A1 /* BumpNoise3DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpNoise3DShader.h; sourceTree = "<group>"; };
+		EA23DFE211DF878E00BF44A1 /* Engine1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine1.h; sourceTree = "<group>"; };
+		EA23DFE311DF878E00BF44A1 /* Engine2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine2.h; sourceTree = "<group>"; };
+		EA23DFE411DF878E00BF44A1 /* Engine3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine3.h; sourceTree = "<group>"; };
+		EA23DFE511DF878E00BF44A1 /* Engine4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine4.h; sourceTree = "<group>"; };
+		EA23DFE611DF878E00BF44A1 /* ExtraShadersDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraShadersDef.h; sourceTree = "<group>"; };
+		EA23DFE711DF878E00BF44A1 /* FilterShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterShader.h; sourceTree = "<group>"; };
+		EA23DFE811DF878E00BF44A1 /* Gradient2DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient2DShader.h; sourceTree = "<group>"; };
+		EA23DFE911DF878E00BF44A1 /* Gradient3DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient3DShader.h; sourceTree = "<group>"; };
+		EA23DFEA11DF878E00BF44A1 /* GrayScaleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayScaleBase.h; sourceTree = "<group>"; };
+		EA23DFEB11DF878E00BF44A1 /* GridShader1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridShader1.h; sourceTree = "<group>"; };
+		EA23DFEC11DF878E00BF44A1 /* GridShader2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridShader2.h; sourceTree = "<group>"; };
+		EA23DFED11DF878E00BF44A1 /* GridShader3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridShader3.h; sourceTree = "<group>"; };
+		EA23DFEE11DF878E00BF44A1 /* GridShader4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridShader4.h; sourceTree = "<group>"; };
+		EA23DFEF11DF878E00BF44A1 /* NoiseBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseBase.h; sourceTree = "<group>"; };
+		EA23DFF011DF878E00BF44A1 /* PartExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartExtension.h; sourceTree = "<group>"; };
+		EA23DFF111DF878E00BF44A1 /* PerturbationShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerturbationShader.h; sourceTree = "<group>"; };
+		EA23DFF211DF878E00BF44A1 /* RandomLines2DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomLines2DShader.h; sourceTree = "<group>"; };
+		EA23DFF311DF878E00BF44A1 /* RandomLines3DShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomLines3DShader.h; sourceTree = "<group>"; };
+		EA23DFF411DF878E00BF44A1 /* RoofShader1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoofShader1.h; sourceTree = "<group>"; };
+		EA23DFF611DF878E00BF44A1 /* ShaderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderBase.h; sourceTree = "<group>"; };
+		EA23DFF711DF878E00BF44A1 /* SubShadersUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubShadersUtils.h; sourceTree = "<group>"; };
+		EA23DFF811DF878E00BF44A1 /* SuperSamplingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperSamplingBase.h; sourceTree = "<group>"; };
+		EA23DFF911DF878E00BF44A1 /* TilingShader1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingShader1.h; sourceTree = "<group>"; };
+		EA23DFFA11DF878E00BF44A1 /* TilingShader2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingShader2.h; sourceTree = "<group>"; };
+		EA23DFFB11DF878E00BF44A1 /* TilingShader3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingShader3.h; sourceTree = "<group>"; };
+		EA23DFFC11DF878E00BF44A1 /* TilingShader4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingShader4.h; sourceTree = "<group>"; };
+		EA23DFFD11DF878E00BF44A1 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		EA23DFFE11DF878E00BF44A1 /* Veloute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veloute.h; sourceTree = "<group>"; };
+		EA23DFFF11DF878E00BF44A1 /* VoronoiBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoiBase.h; sourceTree = "<group>"; };
+		EA23E00011DF878E00BF44A1 /* WeaveShader1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaveShader1.h; sourceTree = "<group>"; };
+		EA23E00111DF878E00BF44A1 /* 2DTransformBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 2DTransformBase.cpp; sourceTree = "<group>"; };
+		EA23E00211DF878E00BF44A1 /* 3DTransformBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3DTransformBase.cpp; sourceTree = "<group>"; };
+		EA23E00311DF878E00BF44A1 /* BumpNoise2DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BumpNoise2DShader.cpp; sourceTree = "<group>"; };
+		EA23E00411DF878E00BF44A1 /* BumpNoise3DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BumpNoise3DShader.cpp; sourceTree = "<group>"; };
+		EA23E00511DF878E00BF44A1 /* Engine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine1.cpp; sourceTree = "<group>"; };
+		EA23E00611DF878E00BF44A1 /* Engine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine2.cpp; sourceTree = "<group>"; };
+		EA23E00711DF878E00BF44A1 /* Engine3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine3.cpp; sourceTree = "<group>"; };
+		EA23E00811DF878E00BF44A1 /* Engine4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine4.cpp; sourceTree = "<group>"; };
+		EA23E00911DF878E00BF44A1 /* FilterShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterShader.cpp; sourceTree = "<group>"; };
+		EA23E00A11DF878E00BF44A1 /* Gradient2DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gradient2DShader.cpp; sourceTree = "<group>"; };
+		EA23E00B11DF878E00BF44A1 /* Gradient3DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gradient3DShader.cpp; sourceTree = "<group>"; };
+		EA23E00C11DF878E00BF44A1 /* GrayScaleBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayScaleBase.cpp; sourceTree = "<group>"; };
+		EA23E00D11DF878E00BF44A1 /* GridShader1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridShader1.cpp; sourceTree = "<group>"; };
+		EA23E00E11DF878E00BF44A1 /* GridShader2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridShader2.cpp; sourceTree = "<group>"; };
+		EA23E00F11DF878E00BF44A1 /* GridShader3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridShader3.cpp; sourceTree = "<group>"; };
+		EA23E01011DF878E00BF44A1 /* GridShader4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridShader4.cpp; sourceTree = "<group>"; };
+		EA23E01111DF878E00BF44A1 /* NoiseBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseBase.cpp; sourceTree = "<group>"; };
+		EA23E01211DF878E00BF44A1 /* PartExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PartExtension.cpp; sourceTree = "<group>"; };
+		EA23E01311DF878E00BF44A1 /* PerturbationShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerturbationShader.cpp; sourceTree = "<group>"; };
+		EA23E01411DF878E00BF44A1 /* RandomLines2DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomLines2DShader.cpp; sourceTree = "<group>"; };
+		EA23E01511DF878E00BF44A1 /* RandomLines3DShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomLines3DShader.cpp; sourceTree = "<group>"; };
+		EA23E01611DF878E00BF44A1 /* RoofShader1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoofShader1.cpp; sourceTree = "<group>"; };
+		EA23E01811DF878E00BF44A1 /* ShaderBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderBase.cpp; sourceTree = "<group>"; };
+		EA23E01911DF878E00BF44A1 /* SubShadersUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubShadersUtils.cpp; sourceTree = "<group>"; };
+		EA23E01A11DF878E00BF44A1 /* SuperSamplingBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SuperSamplingBase.cpp; sourceTree = "<group>"; };
+		EA23E01B11DF878E00BF44A1 /* TilingShader1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TilingShader1.cpp; sourceTree = "<group>"; };
+		EA23E01C11DF878E00BF44A1 /* TilingShader2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TilingShader2.cpp; sourceTree = "<group>"; };
+		EA23E01D11DF878E00BF44A1 /* TilingShader3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TilingShader3.cpp; sourceTree = "<group>"; };
+		EA23E01E11DF878E00BF44A1 /* TilingShader4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TilingShader4.cpp; sourceTree = "<group>"; };
+		EA23E01F11DF878E00BF44A1 /* Veloute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Veloute.cpp; sourceTree = "<group>"; };
+		EA23E02011DF878E00BF44A1 /* VoronoiBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoronoiBase.cpp; sourceTree = "<group>"; };
+		EA23E02111DF878E00BF44A1 /* WeaveShader1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeaveShader1.cpp; sourceTree = "<group>"; };
+		EA23E04311DF87AB00BF44A1 /* Veloute.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Veloute.sln; sourceTree = "<group>"; };
+		EA23E04411DF87AB00BF44A1 /* Veloute.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Veloute.r; sourceTree = "<group>"; };
+		EA5FE0E614AA30A200686395 /* SerialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerialNumber.h; path = ../Common/SerialNumber.h; sourceTree = SOURCE_ROOT; };
+		EA5FE0E714AA30A200686395 /* SerialNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SerialNumber.cpp; path = ../Common/SerialNumber.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95CE14E10A897A1C0055D091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98CCF8C1175BF8000446CDD /* QtCore.framework in Frameworks */,
+				D98CCF8D1175BF8000446CDD /* QtGui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CE14C70A8978E00055D091 = {
+			isa = PBXGroup;
+			children = (
+				EA23E04311DF87AB00BF44A1 /* Veloute.sln */,
+				EA23E04411DF87AB00BF44A1 /* Veloute.r */,
+				EA23DFDE11DF878E00BF44A1 /* 2DTransformBase.h */,
+				EA23DFDF11DF878E00BF44A1 /* 3DTransformBase.h */,
+				EA23DFE011DF878E00BF44A1 /* BumpNoise2DShader.h */,
+				EA23DFE111DF878E00BF44A1 /* BumpNoise3DShader.h */,
+				EA23DFE211DF878E00BF44A1 /* Engine1.h */,
+				EA23DFE311DF878E00BF44A1 /* Engine2.h */,
+				EA23DFE411DF878E00BF44A1 /* Engine3.h */,
+				EA23DFE511DF878E00BF44A1 /* Engine4.h */,
+				EA23DFE611DF878E00BF44A1 /* ExtraShadersDef.h */,
+				EA23DFE711DF878E00BF44A1 /* FilterShader.h */,
+				EA23DFE811DF878E00BF44A1 /* Gradient2DShader.h */,
+				EA23DFE911DF878E00BF44A1 /* Gradient3DShader.h */,
+				EA23DFEA11DF878E00BF44A1 /* GrayScaleBase.h */,
+				EA23DFEB11DF878E00BF44A1 /* GridShader1.h */,
+				EA23DFEC11DF878E00BF44A1 /* GridShader2.h */,
+				EA23DFED11DF878E00BF44A1 /* GridShader3.h */,
+				EA23DFEE11DF878E00BF44A1 /* GridShader4.h */,
+				EA23DFEF11DF878E00BF44A1 /* NoiseBase.h */,
+				EA23DFF011DF878E00BF44A1 /* PartExtension.h */,
+				EA23DFF111DF878E00BF44A1 /* PerturbationShader.h */,
+				EA23DFF211DF878E00BF44A1 /* RandomLines2DShader.h */,
+				EA23DFF311DF878E00BF44A1 /* RandomLines3DShader.h */,
+				EA23DFF411DF878E00BF44A1 /* RoofShader1.h */,
+				EA23DFF611DF878E00BF44A1 /* ShaderBase.h */,
+				EA23DFF711DF878E00BF44A1 /* SubShadersUtils.h */,
+				EA23DFF811DF878E00BF44A1 /* SuperSamplingBase.h */,
+				EA23DFF911DF878E00BF44A1 /* TilingShader1.h */,
+				EA23DFFA11DF878E00BF44A1 /* TilingShader2.h */,
+				EA23DFFB11DF878E00BF44A1 /* TilingShader3.h */,
+				EA23DFFC11DF878E00BF44A1 /* TilingShader4.h */,
+				EA23DFFD11DF878E00BF44A1 /* Utils.h */,
+				EA23DFFE11DF878E00BF44A1 /* Veloute.h */,
+				EA23DFFF11DF878E00BF44A1 /* VoronoiBase.h */,
+				EA23E00011DF878E00BF44A1 /* WeaveShader1.h */,
+				EA23E00111DF878E00BF44A1 /* 2DTransformBase.cpp */,
+				EA23E00211DF878E00BF44A1 /* 3DTransformBase.cpp */,
+				EA23E00311DF878E00BF44A1 /* BumpNoise2DShader.cpp */,
+				EA23E00411DF878E00BF44A1 /* BumpNoise3DShader.cpp */,
+				EA23E00511DF878E00BF44A1 /* Engine1.cpp */,
+				EA23E00611DF878E00BF44A1 /* Engine2.cpp */,
+				EA23E00711DF878E00BF44A1 /* Engine3.cpp */,
+				EA23E00811DF878E00BF44A1 /* Engine4.cpp */,
+				EA23E00911DF878E00BF44A1 /* FilterShader.cpp */,
+				EA23E00A11DF878E00BF44A1 /* Gradient2DShader.cpp */,
+				EA23E00B11DF878E00BF44A1 /* Gradient3DShader.cpp */,
+				EA23E00C11DF878E00BF44A1 /* GrayScaleBase.cpp */,
+				EA23E00D11DF878E00BF44A1 /* GridShader1.cpp */,
+				EA23E00E11DF878E00BF44A1 /* GridShader2.cpp */,
+				EA23E00F11DF878E00BF44A1 /* GridShader3.cpp */,
+				EA23E01011DF878E00BF44A1 /* GridShader4.cpp */,
+				EA23E01111DF878E00BF44A1 /* NoiseBase.cpp */,
+				EA23E01211DF878E00BF44A1 /* PartExtension.cpp */,
+				EA23E01311DF878E00BF44A1 /* PerturbationShader.cpp */,
+				EA23E01411DF878E00BF44A1 /* RandomLines2DShader.cpp */,
+				EA23E01511DF878E00BF44A1 /* RandomLines3DShader.cpp */,
+				EA23E01611DF878E00BF44A1 /* RoofShader1.cpp */,
+				EA23E01811DF878E00BF44A1 /* ShaderBase.cpp */,
+				EA23E01911DF878E00BF44A1 /* SubShadersUtils.cpp */,
+				EA23E01A11DF878E00BF44A1 /* SuperSamplingBase.cpp */,
+				EA23E01B11DF878E00BF44A1 /* TilingShader1.cpp */,
+				EA23E01C11DF878E00BF44A1 /* TilingShader2.cpp */,
+				EA23E01D11DF878E00BF44A1 /* TilingShader3.cpp */,
+				EA23E01E11DF878E00BF44A1 /* TilingShader4.cpp */,
+				EA23E01F11DF878E00BF44A1 /* Veloute.cpp */,
+				EA23E02011DF878E00BF44A1 /* VoronoiBase.cpp */,
+				EA23E02111DF878E00BF44A1 /* WeaveShader1.cpp */,
+				EA5FE0E514AA308500686395 /* Common */,
+				D98CCF8A1175BF8000446CDD /* QtCore.framework */,
+				D98CCF8B1175BF8000446CDD /* QtGui.framework */,
+				951F592A0A8A710D007B49F5 /* COMUtilities.cpp */,
+				95CE14DA0A8979340055D091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE14DA0A8979340055D091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95CE14E30A897A1C0055D091 /* Myextension.mcx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5FE0E514AA308500686395 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FE0E614AA30A200686395 /* SerialNumber.h */,
+				EA5FE0E714AA30A200686395 /* SerialNumber.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95CE14E20A897A1C0055D091 /* Myextension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */;
+			buildPhases = (
+				95CE14E00A897A1C0055D091 /* Sources */,
+				95CE14E10A897A1C0055D091 /* Frameworks */,
+				95C1E7C20A8A8E1300F4A996 /* Rez */,
+				95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Myextension;
+			productName = Myextension;
+			productReference = 95CE14E30A897A1C0055D091 /* Myextension.mcx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE14C90A8978E00055D091 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 95CE14C70A8978E00055D091;
+			productRefGroup = 95CE14DA0A8979340055D091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95CE14E20A897A1C0055D091 /* Myextension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		95C1E7C20A8A8E1300F4A996 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA23E04511DF87AB00BF44A1 /* Veloute.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95DDDF740A8AA7B300DCFD54 /* CopyToCarrara */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyToCarrara;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n../../../Tools/ResExtracter/Mac/ResExtracter $BUILT_PRODUCTS_DIR/Myextension.rsrc\n\nif [ -d \"$CARRAPATH\" ]; then\n\tCOPYPATH=\"$CARRAPATH/Contents/MacOS/Extensions/SDK\"\n\n\tmkdir -p \"$COPYPATH\"\n\n\tMYNAME=`basename \\`pwd\\``\n\n\techo \"Copying to $COPYPATH as $MYNAME\"\n\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.mcx\" \"$COPYPATH/$MYNAME.mcx\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.dat\" \"$COPYPATH/$MYNAME.dat\"\n\tcp \"$BUILT_PRODUCTS_DIR/Myextension.txt\" \"$COPYPATH/$MYNAME.txt\"\n\nelse\n\techo \"Please set the CARRAPATH variable in the Project's build settings\"\n\techo \"You'll have to rename the Carrara install and package folders to please Xcode\"\n\techo \"eg: /Applications/Carrara5Pro/CarraraPro.app\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95CE14E00A897A1C0055D091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951F592B0A8A710D007B49F5 /* COMUtilities.cpp in Sources */,
+				EA23E02211DF878E00BF44A1 /* 2DTransformBase.cpp in Sources */,
+				EA23E02311DF878E00BF44A1 /* 3DTransformBase.cpp in Sources */,
+				EA23E02411DF878E00BF44A1 /* BumpNoise2DShader.cpp in Sources */,
+				EA23E02511DF878E00BF44A1 /* BumpNoise3DShader.cpp in Sources */,
+				EA23E02611DF878E00BF44A1 /* Engine1.cpp in Sources */,
+				EA23E02711DF878E00BF44A1 /* Engine2.cpp in Sources */,
+				EA23E02811DF878E00BF44A1 /* Engine3.cpp in Sources */,
+				EA23E02911DF878E00BF44A1 /* Engine4.cpp in Sources */,
+				EA23E02A11DF878E00BF44A1 /* FilterShader.cpp in Sources */,
+				EA23E02B11DF878E00BF44A1 /* Gradient2DShader.cpp in Sources */,
+				EA23E02C11DF878E00BF44A1 /* Gradient3DShader.cpp in Sources */,
+				EA23E02D11DF878E00BF44A1 /* GrayScaleBase.cpp in Sources */,
+				EA23E02E11DF878E00BF44A1 /* GridShader1.cpp in Sources */,
+				EA23E02F11DF878E00BF44A1 /* GridShader2.cpp in Sources */,
+				EA23E03011DF878E00BF44A1 /* GridShader3.cpp in Sources */,
+				EA23E03111DF878E00BF44A1 /* GridShader4.cpp in Sources */,
+				EA23E03211DF878E00BF44A1 /* NoiseBase.cpp in Sources */,
+				EA23E03311DF878E00BF44A1 /* PartExtension.cpp in Sources */,
+				EA23E03411DF878E00BF44A1 /* PerturbationShader.cpp in Sources */,
+				EA23E03511DF878E00BF44A1 /* RandomLines2DShader.cpp in Sources */,
+				EA23E03611DF878E00BF44A1 /* RandomLines3DShader.cpp in Sources */,
+				EA23E03711DF878E00BF44A1 /* RoofShader1.cpp in Sources */,
+				EA23E03911DF878E00BF44A1 /* ShaderBase.cpp in Sources */,
+				EA23E03A11DF878E00BF44A1 /* SubShadersUtils.cpp in Sources */,
+				EA23E03B11DF878E00BF44A1 /* SuperSamplingBase.cpp in Sources */,
+				EA23E03C11DF878E00BF44A1 /* TilingShader1.cpp in Sources */,
+				EA23E03D11DF878E00BF44A1 /* TilingShader2.cpp in Sources */,
+				EA23E03E11DF878E00BF44A1 /* TilingShader3.cpp in Sources */,
+				EA23E03F11DF878E00BF44A1 /* TilingShader4.cpp in Sources */,
+				EA23E04011DF878E00BF44A1 /* Veloute.cpp in Sources */,
+				EA23E04111DF878E00BF44A1 /* VoronoiBase.cpp in Sources */,
+				EA23E04211DF878E00BF44A1 /* WeaveShader1.cpp in Sources */,
+				EA5FE0E814AA30A200686395 /* SerialNumber.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95CE14CB0A8978E00055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_x86_64;
+		};
+		95CE14CC0A8978E00055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = x86_64;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_x86_64;
+		};
+		95CE14E50A897A3A0055D091 /* Debug_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_x86_64;
+		};
+		95CE14E60A897A3A0055D091 /* Release_x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_x86_64;
+		};
+		D98CCF941175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_i386;
+		};
+		D98CCF951175C00B00446CDD /* Debug_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_i386;
+		};
+		D98CCF961175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Debug;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Debug_ppc;
+		};
+		D98CCF971175C00B00446CDD /* Debug_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					Debug_,
+					"$(inherited)",
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug_ppc;
+		};
+		D98CCF981175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = i386;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_i386;
+		};
+		D98CCF991175C02E00446CDD /* Release_i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_i386;
+		};
+		D98CCF9A1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "${TARGET_ARCH}";
+				BASE_CONFIG = Release;
+				CARRAPATH = "/Applications/DAZ 3D/Carrara8 64-bit/Carrara.app";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					macintosh,
+					MACOSX,
+					qOsXLater,
+					qMacho,
+					qSMP,
+					qCOMSupport,
+					qUseMCImageColorPicker,
+					qNoAllocators,
+					qIsInExtension,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.3;
+				MACOSX_DEPLOYMENT_TARGET_x86_64 = 10.5;
+				OTHER_CFLAGS = (
+					"-fexceptions",
+					"-fmessage-length=0",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					$OTHER_CFLAGS,
+					"$(OTHER_CPLUSPLUSFLAGS_$(CURRENT_ARCH))",
+				);
+				OTHER_CPLUSPLUSFLAGS_i386 = "";
+				OTHER_CPLUSPLUSFLAGS_ppc = "-fno-use-cxa-atexit";
+				OTHER_CPLUSPLUSFLAGS_x86_64 = "";
+				OTHER_REZFLAGS = "$(inherited) -d MAC=1 -d qCOMSupport=1 -d qMacho=1";
+				REZ_SEARCH_PATHS = (
+					../../../Include/Carrara,
+					../../../Include/Common,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk/;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.3.9.sdk/;
+				SDKROOT_x86_64 = /Developer/SDKs/MacOSX10.5.sdk/;
+				TARGET_ARCH = ppc;
+				USER_HEADER_SEARCH_PATHS = "../../../Include/Carrara ../../../Include/Common ../";
+				WARNING_CFLAGS = "-Wno-deprecated";
+			};
+			name = Release_ppc;
+		};
+		D98CCF9B1175C02E00446CDD /* Release_ppc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mcx;
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "../../../Include/Common/exports-macho.exp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../Lib/Mac/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					QuickTime,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRELINK_LIBS = "../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/CommonLibrary.lib ../../../Lib/Mac/${BASE_CONFIG}/${TARGET_ARCH}/SafeLibrary.lib $(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = Myextension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SHARED_PRECOMPS_DIR = "";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release_ppc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE14CA0A8978E00055D091 /* Build configuration list for PBXProject "Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14CB0A8978E00055D091 /* Debug_x86_64 */,
+				D98CCF941175C00B00446CDD /* Debug_i386 */,
+				D98CCF961175C00B00446CDD /* Debug_ppc */,
+				95CE14CC0A8978E00055D091 /* Release_x86_64 */,
+				D98CCF981175C02E00446CDD /* Release_i386 */,
+				D98CCF9A1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+		95CE14E40A897A3A0055D091 /* Build configuration list for PBXNativeTarget "Myextension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE14E50A897A3A0055D091 /* Debug_x86_64 */,
+				D98CCF951175C00B00446CDD /* Debug_i386 */,
+				D98CCF971175C00B00446CDD /* Debug_ppc */,
+				95CE14E60A897A3A0055D091 /* Release_x86_64 */,
+				D98CCF991175C02E00446CDD /* Release_i386 */,
+				D98CCF9B1175C02E00446CDD /* Release_ppc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_x86_64;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE14C90A8978E00055D091 /* Project object */;
+}
